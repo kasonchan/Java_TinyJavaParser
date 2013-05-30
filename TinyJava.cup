@@ -1,0 +1,150 @@
+import java_cup.runtime.*;
+
+terminal SEMICOLON, PERIOD, COMMA;
+
+terminal LBRACE, RBRACE, LBRACK, RBRACK, LPAREN, RPAREN;
+
+terminal AND, OR, LT, LE, GT, GE, EQ, NE;
+
+terminal NOT;
+
+terminal PLUS, MINUS;
+terminal TIMES, SLASH;
+
+terminal ASSIGN;
+
+terminal ARGS, BOOLEAN, CLASS, ELSE, FALSE, IF, IN, INT, IMPORT, JAVAUTIL, MAIN, NEW, NEXTINT, OUT, PRINTLN, PUBLIC, RETURN, SCANNER, STATIC, STRING, SYSTEM, THIS, TRUE, VOID, WHILE, INTEGER, ID;
+
+non terminal program;
+non terminal classDefinition;
+non terminal memberList;
+non terminal memberDeclaration;
+non terminal memberDeclarator;
+non terminal functionDefinition;
+non terminal variableDeclaration;
+non terminal functionDeclaration;
+non terminal statementList;
+non terminal expression;
+non terminal type;
+non terminal argumentDeclarationList;
+non terminal mainDeclaration;
+non terminal argumentDeclaration;
+non terminal compoundStatement;
+non terminal statement;
+non terminal assignmentStatement;
+non terminal variable;
+non terminal term;
+non terminal expressionList;
+non terminal primaryExpression;
+non terminal object;
+non terminal functionCall;
+non terminal binaryOperator;
+non terminal unaryOperator;
+
+non terminal programClassDefinitionX;
+non terminal CDmemberListX;
+
+non terminal mDX;
+non terminal vDX;
+non terminal sLX;
+non terminal rEX;
+
+non terminal staticX;
+
+non terminal vDExt;
+non terminal brackX;
+non terminal iX;
+
+non terminal expressionX;
+non terminal argumentDeclarationListX;
+non terminal argumentDeclarationX;
+non terminal brack2X;
+non terminal statementX;
+
+non terminal expressionCX;
+non terminal objectDotX;
+non terminal expressionListX;
+
+precedence left TIMES, SLASH;
+precedence left PLUS, MINUS;
+precedence left LT, GT, LE, GE;
+precedence left EQ, NE;
+precedence left AND;
+precedence left OR;
+
+start with program;
+
+program ::= IMPORT JAVAUTIL SEMICOLON classDefinition programClassDefinitionX ;
+programClassDefinitionX ::= classDefinition programClassDefinitionX | ;
+
+classDefinition ::= CLASS ID LBRACE CDmemberListX RBRACE ;
+CDmemberListX ::= memberList CDmemberListX | ;
+
+memberList ::= memberDeclaration mDX ;
+mDX ::= memberDeclaration mDX | ;
+
+memberDeclaration ::= memberDeclarator SEMICOLON | functionDefinition ;
+
+memberDeclarator ::= variableDeclaration | STATIC variableDeclaration ;
+
+functionDefinition ::= functionDeclaration LBRACE vDX sLX rEX RBRACE ;
+vDX ::= variableDeclaration SEMICOLON vDX | ;
+sLX ::= statementList | ;
+rEX ::= RETURN expression SEMICOLON | ;
+
+functionDeclaration ::= PUBLIC staticX type ID LPAREN argumentDeclarationListX RPAREN | mainDeclaration ;
+staticX ::= STATIC | ;
+argumentDeclarationListX ::= argumentDeclarationList | ;
+
+variableDeclaration ::= type ID vDExt ;
+vDExt ::= brackX ASSIGN NEW INT LBRACK INTEGER RBRACK iX | ;
+brackX ::= LBRACK RBRACK brackX | ;
+iX ::= LBRACK INTEGER RBRACK iX | ;
+
+mainDeclaration ::= STATIC SCANNER IN ASSIGN NEW SCANNER LPAREN SYSTEM PERIOD IN RPAREN SEMICOLON PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN
+	| PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN;
+
+type ::= ID | INT | BOOLEAN ;
+
+argumentDeclarationList ::= argumentDeclaration argumentDeclarationX;
+argumentDeclarationX ::= COMMA argumentDeclaration argumentDeclarationX | ;
+
+argumentDeclaration ::= type ID brack2X ;
+brack2X ::= LBRACK RBRACK brack2X | ;
+
+statementList ::= statement statementX ;
+statementX ::= statement statementX | ;
+
+statement ::= assignmentStatement SEMICOLON 
+	| compoundStatement 
+	| IF LPAREN expression RPAREN statement 
+	| ELSE statement 
+	| WHILE LPAREN expression RPAREN statement 
+	| SYSTEM PERIOD OUT PERIOD PRINTLN LPAREN expression RPAREN SEMICOLON ;
+
+compoundStatement ::= LBRACE statementList RBRACE ;
+
+assignmentStatement ::= variable ASSIGN expression
+	| variable ASSIGN NEW ID LPAREN RPAREN 
+	| variable ASSIGN IN PERIOD NEXTINT LPAREN RPAREN ;
+
+expressionList ::= expression expressionCX ;
+expressionCX ::= COMMA expression expressionCX | ;
+
+expression ::= term | expression binaryOperator expression ;
+
+term ::= primaryExpression | unaryOperator term ;
+
+primaryExpression ::= object | INTEGER | TRUE | FALSE | LPAREN expression RPAREN ;
+
+object ::= variable | functionCall ;
+
+variable ::= THIS | objectDotX ID expressionX ; 
+
+functionCall ::= objectDotX ID LPAREN expressionListX RPAREN ;
+objectDotX ::= object PERIOD | ;
+expressionX ::= LBRACK expression RBRACK expressionX | ;
+expressionListX ::= expressionList | ;
+
+unaryOperator ::= NOT | PLUS | MINUS;
+binaryOperator ::= AND | OR | LE | LT | GT | GE | EQ | NE | PLUS | MINUS | TIMES | SLASH ;

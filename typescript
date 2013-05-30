@@ -1,0 +1,240 @@
+Script started on Tue 12 Mar 2013 02:38:53 PM CDT
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ (reverse-i-search)`': [Kc': java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test3.java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@p[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ': cup -parser TinyJavaParser -symbols Symbol -expect 100 -nowarn TinyJava.cup[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ cup -parser TinyJavaParser -symbols Symbol -expect 100 -nowarn TinyJava.cup [A]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ 
+
+Warning : *** Shift/Reduce conflict found in state #45
+  between vDX ::= (*) 
+  and     type ::= (*) ID 
+  under symbol ID
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #25
+  between mDX ::= (*) 
+  and     type ::= (*) BOOLEAN 
+  under symbol BOOLEAN
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #25
+  between mDX ::= (*) 
+  and     type ::= (*) INT 
+  under symbol INT
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #25
+  between mDX ::= (*) 
+  and     functionDeclaration ::= (*) PUBLIC staticX type ID LPAREN argumentDeclarationListX RPAREN 
+  and     mainDeclaration ::= (*) PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN 
+  under symbol PUBLIC
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #25
+  between mDX ::= (*) 
+  and     mainDeclaration ::= (*) STATIC SCANNER IN ASSIGN NEW SCANNER LPAREN SYSTEM PERIOD IN RPAREN SEMICOLON PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN 
+  and     memberDeclarator ::= (*) STATIC variableDeclaration 
+  under symbol STATIC
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #25
+  between mDX ::= (*) 
+  and     type ::= (*) ID 
+  under symbol ID
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #21
+  between mDX ::= (*) 
+  and     type ::= (*) BOOLEAN 
+  under symbol BOOLEAN
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #21
+  between mDX ::= (*) 
+  and     type ::= (*) INT 
+  under symbol INT
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #21
+  between mDX ::= (*) 
+  and     functionDeclaration ::= (*) PUBLIC staticX type ID LPAREN argumentDeclarationListX RPAREN 
+  and     mainDeclaration ::= (*) PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN 
+  under symbol PUBLIC
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #21
+  between mDX ::= (*) 
+  and     mainDeclaration ::= (*) STATIC SCANNER IN ASSIGN NEW SCANNER LPAREN SYSTEM PERIOD IN RPAREN SEMICOLON PUBLIC STATIC VOID MAIN LPAREN STRING ARGS LBRACK RBRACK RPAREN 
+  and     memberDeclarator ::= (*) STATIC variableDeclaration 
+  under symbol STATIC
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #21
+  between mDX ::= (*) 
+  and     type ::= (*) ID 
+  under symbol ID
+  Resolved in favor of shifting.
+
+Warning : *** Shift/Reduce conflict found in state #48
+  between vDX ::= (*) 
+  and     type ::= (*) ID 
+  under symbol ID
+  Resolved in favor of shifting.
+
+------- CUP v0.11a beta 20060608 Parser Generation Summary -------
+  0 errors and 12 warnings
+  52 terminals, 43 non-terminals, and 96 productions declared, 
+  producing 203 unique parse states.
+  0 terminals declared but not used.
+  0 non-terminals declared but not used.
+  0 productions never reduced.
+  12 conflicts detected (100 expected).
+  Code written to "TinyJavaParser.java", and "Symbol.java".
+---------------------------------------------------- (v0.11a beta 20060608)
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ (reverse-i-search)`': [Kj': java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test3.java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[46Pf': jflex TinyJava.jflex[1@l[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@x[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ jflex TinyJava.jflex
+Reading "TinyJava.jflex"
+Constructing NFA : 323 states in NFA
+Converting NFA to DFA : 
+........................................................................................................................................................
+154 states before minimization, 149 states in minimized DFA
+Writing code to "TinyJavaLexer.java"
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ (reverse-i-search)`': [Kj': jflex TinyJava.jflexa': java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test3.java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@v[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12Pc': javac -cp .:java-cup-11a-runtime.jar TinyJavaPars.java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ javac -cp .:java-cup-11a-runtime.jar TinyJavaPars.java[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CLexer.java[35Pflex TinyJava.jflexavac -cp .:java-cup-11a-runtime.jar TinyJavaLexer.java
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ javac -cp .:java-cup-11a-runtime.jar TinyJavaLexer.java[C[C[1P.java[1P.java[1P.java[1P.java[1P.javaP.javaa.javar.javas.java
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ javac -cp .:java-cup-11a-runtime.jar TinyJavaPars.javaLexer.java[35Pflex TinyJava.jflexcup -parser TinyJavaParser -symbols Symbol -expect 100 -nowarn TinyJava.cup [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pjava -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test3.java
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PTest3.java[1PTest3.java[1PTest3.java[1PTest3.java[1PTest3.java[1Pest3.java[CTest3.javaeTest3.javasTest3.javatTest3.javasTest3.java/Test3.java[C[C[C[C[C[1P.java1.java
+Source Program
+--------------
+
+// Test1.java
+
+import java.util.*;
+
+class Test1 {
+
+  public static void main (String args []) {
+    int my_list [] = new int [100]; 
+    int my_list_tl [] = new int [100];
+    int r; int h; int i;
+    {
+      r = 2;
+      while (r < 5) {  
+        my_list [r - 2] = r;
+         r = r + 1;
+      }  
+      h = my_list [0];
+      i = r;
+      while (i > 0) {
+	my_list_tl [i - 1] = my_list [i];
+	i = i - 1;
+      }
+    }
+    System . out . println (h); 
+    System . out . println (my_list_tl [0]);
+  }
+}]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test1.java[1P.java2.java
+Source Program
+--------------
+
+// Test2.java
+
+// This program tests non-local referencing.
+
+import java.util.*;
+
+class Test2 {
+
+  static int h;  // non-local variable
+
+  public static int area (int x, int y) {
+    int z;
+    {
+      z = 2 * (x * y + (x * h) + y * h);
+    }
+    return z;
+  }
+
+  static Scanner in = new Scanner (System . in);
+
+  public static void main (String args []) {
+    int a; int b; int s;
+    {
+      a = in . nextInt ();
+      b = in . nextInt ();
+      h = in . nextInt ();
+      s = area (a, b);
+    }
+    System . out . println (s);
+  }
+
+}]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test2.java[1P.java3.java
+Source Program
+--------------
+
+// Test3.java
+
+import java.util.*;
+
+// This program tests recursive functions.
+
+class Test3 {
+
+  public static int facto (int x) {
+    int s;
+    if (x == 1)
+      s = 1;
+    else
+      s = x * facto (x - 1);
+    return s;
+  }
+
+  static Scanner in = new Scanner (System . in);
+
+  public static void main (String args []) {
+    int i; int fac;
+    {
+      i = in . nextInt ();
+      fac = facto (i);
+    }
+    System . out . println (fac);
+  }
+}
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ java -cp .:java-cup-11a-runtime.jar TinyJavaPars < Tests/Test3.java[1P.java4.java
+Source Program
+--------------
+
+// Test4.java
+
+import java.util.*;
+
+// This program tests arrays passed as parameters.
+
+class Test4 {
+
+  public static int f (int a [], int i) {
+    int x;
+    {
+      x = a [i];
+      a [i] = 0;
+      i = 622;
+    }
+    return x;
+  }
+
+  public static void main (String args []) {
+    int b [] = new int [100];
+    int i; int n;
+    {
+      n = 40;
+      i = 0;
+    }
+    while (i < 100) {
+      b [i] = i * i;
+      i = i + 1;
+    }
+    System . out . println (n);
+    System . out . println (f (b, n));
+    System . out . println (n);		// n should be unchanged
+    System . out . println (b [n]);	// b [n] should be 0
+  }
+
+}
+]0;ka-son@kason-Lenovo-IdeaPad-S300: ~/Documents/CSCE3650/CSCE3650KaSonChanHW3ka-son@kason-Lenovo-IdeaPad-S300:~/Documents/CSCE3650/CSCE3650KaSonChanHW3$ exit
+exit
+
+Script done on Tue 12 Mar 2013 02:40:10 PM CDT
